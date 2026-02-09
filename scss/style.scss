@@ -2023,3 +2023,16 @@ textarea.form-control {
     stroke-dashoffset: -136px;
   }
 }
+/* Mobile scroll fix for hero section */
+@media (max-width: 768px) {
+  #home-section,
+  #home-section * {
+    touch-action: pan-y;
+  }
+
+  .one-third,
+  .overlay,
+  .overlay-1 {
+    pointer-events: none;
+  }
+}
